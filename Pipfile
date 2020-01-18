@@ -9,6 +9,8 @@ pylint = "*"
 [packages]
 flask = "*"
 pyautogui = "*"
+pyobjc-core = "*"
+pyobjc = "*"
 
 [requires]
 python_version = "3.7"

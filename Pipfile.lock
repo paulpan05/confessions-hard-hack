@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "986cac25e9a6553fbfc8195e0a99f0f9409b679457f293905ecd38fca82b5623"
+            "sha256": "152bbb3f0e3e7bd05d37552f0243c548379a62d75c95ba40e8d48f6a0cbdf0c0"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -136,7 +136,7 @@
                 "sha256:53ae86caaedc48350c6e93d6e778a0c5044e802340b6d6a679e55014758be540",
                 "sha256:c78056797592fcd351c60604c5a65ad5d259afd908ee1e160364ac7728959e03"
             ],
-            "markers": "platform_system == 'Darwin'",
+            "index": "pypi",
             "version": "==6.1"
         },
         "pyobjc-core": {
@@ -146,7 +146,7 @@
                 "sha256:751cdeb436cb181af2e2413015b072075590577c410c7f345080a38dd028b8ec",
                 "sha256:8ccf44511cbe438fa6562c423c0c5f1dad7cfc0eadd6d8f112840f8845b44fda"
             ],
-            "markers": "platform_system == 'Darwin'",
+            "index": "pypi",
             "version": "==6.1"
         },
         "pyobjc-framework-accounts": {

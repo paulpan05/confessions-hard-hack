@@ -4,6 +4,7 @@ import serial
 import threading
 import time
 from pyautogui import hotkey
+import json
 app = Flask(__name__, template_folder='static')
 
 ser = serial.Serial('COM9',115200) # check your com port
@@ -19,7 +20,10 @@ def buttonToKeyboard():
 
 @app.route('/')
 def hello_world():
-    return render_template('index.html')
+    f = open('static/data_fixed.json', 'r')
+    result = json.loads(f.read())
+    print(result[len(result) - 1]['content'])
+    return render_template('index.html', items=result[len(result) - 100: len(result)])
 
 if __name__ == '__main__':
     thread = threading.Thread(target=buttonToKeyboard,daemon=True)
