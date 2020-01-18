@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 import codecs
+import serial
 import threading
 import time
 from pyautogui import hotkey
@@ -10,11 +11,11 @@ ser = serial.Serial('COM9',115200) # check your com port
 # thread for keyboard input, still needs a way to exit gracefully
 def buttonToKeyboard():
     while True:
-	result = ser.read(size=1)
-	if result==b'\x81':
-	    hotkey('left')
-	if result==b'\x82':
-	    hotkey('right')
+	    result = ser.read(size=1)
+	    if result==b'\x81':
+	        hotkey('left')
+	    if result==b'\x82':
+	        hotkey('right')
 
 @app.route('/')
 def hello_world():
